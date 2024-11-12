@@ -22,11 +22,11 @@ namespace API.Data
                     Size= 'M',
                     Band= "Enforced",
                     Genre= "Thrash"
-                },
+                },  
                 new Product
                 {
                     Name = "Sodom Partisan",
-                    Description = "Artwork from the Partisan EP",
+                    Description = "Artwork from the Partisan EP, printed front & back.",
                     Price = 2999,
                     ImageUrl= "https://m.media-amazon.com/images/I/A18Zbr2L5LL._CLa%7C2140%2C2000%7CB1mIFN0BOTL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX569_.png",
                     Category = "Longsleeve",
