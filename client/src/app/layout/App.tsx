@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import Header from "./Header";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState(true);
@@ -27,7 +28,7 @@ function App() {
         <CssBaseline />
         <Header mode={mode} toggleMode={toggleMode} />
         <Container>
-          <Catalogue />
+          <Outlet />
         </Container>
       </ThemeProvider>
     </>
