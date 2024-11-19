@@ -44,6 +44,7 @@ export default function Header({ mode, toggleMode }: Props) {
           <Switch checked={mode} onChange={toggleMode} />
         </Box>
 
+        <Box></Box>
         <List sx={{ display: "flex" }}>
           {leftLinks.map(({ name, path }) => (
             <ListItem
@@ -58,7 +59,6 @@ export default function Header({ mode, toggleMode }: Props) {
         </List>
 
         <Box display="flex" alignItems="center">
-          {" "}
           <SearchAppBar />
           <List sx={{ display: "flex" }}>
             {rightLinks.map(({ name, path }) => (
@@ -69,7 +69,7 @@ export default function Header({ mode, toggleMode }: Props) {
                 sx={{
                   color: "white",
                   typography: "h6",
-                  ml: -2,
+                  mr: -2,
                 }}
               >
                 {name}
