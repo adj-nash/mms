@@ -22,6 +22,7 @@ const leftLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
+  { name: "Catalogue", path: "/catalogue" },
 ];
 
 const rightLinks = [

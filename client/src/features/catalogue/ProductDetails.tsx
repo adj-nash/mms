@@ -41,22 +41,24 @@ export default function ProductDetails() {
           />
         </Grid>
         <Grid size={6}>
-          <Typography variant="h2">{product.name}</Typography>
+          <Typography variant="h3" sx={{ mb: 2 }}>
+            {product.name}
+          </Typography>
 
-          <Typography variant="h3">
+          <Typography variant="h4" sx={{ mb: 1 }}>
             £{(product.price / 100).toFixed(2)}
           </Typography>
-          <TableContainer>
-            <Table>
-              <TableBody>
-                <TableRow>
-                  <TableCell sx={{ border: "none", textAlign: "left" }}>
-                    Hello{" "}
-                  </TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </TableContainer>
+          <Typography variant="subtitle1">Inc. VAT, plus shipping</Typography>
+          <br />
+          <Typography variant="subtitle1">Size {product.size}</Typography>
+          <br />
+          <Typography variant="subtitle1">Quantity In Stock - 100</Typography>
+          <br />
+          <Typography variant="subtitle1">{product.description}</Typography>
+          <br />
+          <Typography variant="subtitle1">Band - {product.band}</Typography>
+          <Typography variant="subtitle1">Genre - {product.genre}</Typography>
+          <br />
           <Grid />
         </Grid>
       </Grid>
