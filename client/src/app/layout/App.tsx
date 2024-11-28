@@ -1,4 +1,3 @@
-import Catalogue from "../../features/catalogue/Catalogue";
 import {
   Container,
   createTheme,
@@ -8,6 +7,8 @@ import {
 import Header from "./Header";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [mode, setMode] = useState(true);
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
+        <ToastContainer position="bottom-right" />
         <CssBaseline />
         <Header mode={mode} toggleMode={toggleMode} />
         <Container>
