@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class ErrorController : BaseController
+    public class ErrorsController : BaseController
     {
         
     [HttpGet("not-found")]

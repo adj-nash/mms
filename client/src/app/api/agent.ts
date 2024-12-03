@@ -54,11 +54,11 @@ const products = {
 };
 
 const errors = {
-  get400Error: () => requests.get("Error/bad-request"),
-  get401Error: () => requests.get("Error/unauthorised"),
-  get404Error: () => requests.get("Error/not-found"),
-  get500Error: () => requests.get("Error/server-error"),
-  getValidationError: () => requests.get("Error/validation-error"),
+  get400Error: () => requests.get("Errors/bad-request"),
+  get401Error: () => requests.get("Errors/unauthorised"),
+  get404Error: () => requests.get("Errors/not-found"),
+  get500Error: () => requests.get("Errors/server-error"),
+  getValidationError: () => requests.get("Errors/validation-error"),
 };
 
 const agent = {
